@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-pen.css" rel="stylesheet">
+	<title>선 넘는 외국어</title>
+
+
+	<style type="text/css"> 
+		html{margin: 0; padding: 0;}
+		@font-face {
+			    font-family: 'Pretendard-Medium';
+			    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+			    font-weight: 500;
+			    font-style: normal;
+			}
+
+		@font-face {
+		    font-family: 'Pretendard-SemiBold';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+		    font-weight: 600;
+		    font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'Pretendard-Bold';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+		    font-weight: 700;
+		    font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'Pretendard-ExtraBold';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+		    font-weight: 800;
+		    font-style: normal;
+		}
+
+	    .nanum {
+	    	font-family: 'Nanum Pen Script', system-ui;
+	    	font-style: normal;
+	    }
+
+
+	    .imoji{display: block; background-attachment: fixed; align-items: center; justify-content: center;}
+	   body,a,b{margin: 0; padding: 0;}
+	   section{padding: 85px 0px;}
+		.wrap {margin: auto; width: 1000px;}
+		.flex {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between;}
+		.flexHalf {display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; }
+		.center{text-align: center; margin: auto; padding: 0;}
+
+		h1,h2,h3{font-family: 'Pretendard-ExtraBold';}
+		h5,h4{font-family: 'Pretendard-SemiBold';}
+		h4,p{font-family: 'Prenterndard-Medium';}
+		h1{color:white; text-align: center; font-size: 4.6rem; line-height: 1.33;} /* 타이틀 */
+		h2{padding: 6px; font-size: 3rem;} /* 문장 나열 */
+		h3{font-size: 2.8rem; line-height: 1.23; font-weight: 700; margin: 0;} /* 제목 */
+		h4{font-weight: 200; color:white; font-size:0.85rem; padding: 23px 490px 0px 0px;} /*안내문*/
+		h5{font-size: 2.2rem; text-align: center; display: block;} /*원인*/
+		p{line-height: 1.67; font-size: 1.2rem; display: block; color: black; padding: 0px 35px 0px 35px}
+		
+		ul a{margin:auto; font-family: 'Nanum Pen Script'; font-size:3.6rem; line-height: 1.25; display: block; text-align: center; align-items: center; justify-content: center; opacity: 1;}
+		ul b{margin: auto; font-family: 'Pretendard-Medium'; text-align: center; display: flex; padding-top: 50px; justify-content:center;  }
+
+		input[type="checkbox"]{width: 17px; height: 17px; margin: 1.3px 10px 4px 4px;}
+		label{display: block;}
+
+
+
+		#ch1:checked~#
+
+	
+		/* 그라디언트 */
+		.gra1{color: black;}
+		.gra2{color:#424242;}
+		.gra3{color:#616161;}
+		.gra4{color:#A5A5A5;}
+		.gra5{color:#BCBCBC;}
+		.gra6{color: #c0c0c0;}
+		.gra7{color: #AEAEAE;}
+
+		/* 배경 */
+		.back_gra{background: linear-gradient(white 47%, black 100%);}
+		.back_black{background: black;}
+		.back_red{background: #B00202; color: white;}
+
+		/*글씨색*/
+		.fontWhite{color: white;}
+		.fontRed{color:#B00202;}
+
+		/* 이미지 */
+		.imgsize{display: block; width: 300px; padding: 0;}
+		.good{
+			opacity: 0.4;
+			display: block; 
+			background: url(good.png);
+			background-size: 250px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    }
+    .bad{display: block; 
+			background: url(bad.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;}
+
+		/* 여백 */
+		.morePad{padding: 250px 0px;}
+		.btwnbox{padding-bottom: 35px;}
+		.underPad{padding-bottom: 80px;}
+		.noMar{margin: 0; padding: 0;}
+		.lessPad{padding-bottom:14px;}
+
+
+
+		/*도형*/
+		.box{display: flex; width: 168px; height: 57px; border: 2px solid white; border-radius: 70px; align-items: center; justify-content: center; text-align: center;
+			color: white; font-family: 'Pretendard-Bold'; font-size: 1.26rem;}
+
+
+
+		/*과한 외국어*/
+
+
+
+
+		/*이유*/
+		.flexHalf div{margin: auto; width: 50%;}
+		.reasonBox1{
+						position: absolute;
+						top: 4130px;
+						display:flex;
+            color: white;
+            width: 420px;
+            height: 530px;
+            background-color: #B00202; 
+						align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            margin:auto;}
+
+    .reasonBox2{
+						position: absolute;
+						top: 4130px;
+						left:52.7%;
+						display:flex;
+            color: white;
+            width: 420px;
+            height: 530px;
+            background-color: #B00202; 
+						align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+          	margin:auto;}
+
+    .reason1, .reason2{position: relative; display: flex; align-items: center; justify-content: center; background: white; border-radius: 50px; border: 3.7px solid #B00202; width: 346px; height: 522px; color: black; margin-top:0; margin-bottom:0; }
+
+    .reason2{margin-right: 0px; }
+
+	  .reasonBox1:hover.reasonBox1{opacity: 0;}
+	  .reasonBox2:hover.reasonBox2{opacity: 0;}
+	 
+
+          
+        
+
+
+	</style>
+</head>
+<body>
+	<section class="back_gra"> 	
+			<h2 class="gra1">명품 하울 언박싱 브이로그</h2>
+			<h2 class="gra1">회의 시간 오후 3시로 어레인지해 주세요</h2>
+			<h2 class="gra2">오마카세 먹으러 갈래?</h2>
+			<h2 class="gra2">아이디어 조금만 더 디벨롭해서 컨펌받읍시다</h2>
+			<h2 class="gra3">오픈 런해서 겨우 바잉했어요</h2>
+			<h2 class="gra3">오늘 회의 아젠다가 뭐죠?</h2>
+			<h2 class="gra3">이번 프로젝트에 인볼브되어 있으세요?</h2>
+			<h2 class="gra4">날씨 이슈로 비행기 안 뜬대</h2>
+			<h2 class="gra4">여기 모찌 맛있다</h2>
+			<h2 class="gra4">이 옷은 소라색이 베스트예요</h2>
+			<h2 class="gra5">텐션 올려~</h2>
+			<h2 class="gra5">사고 싶은 옷 솔드아웃됐어</h2>
+			<h2 class="gra6">팔로워 니즈 파악 후 아이데이션하죠</h2>
+			<h2 class="gra7">저희 카페는 1인 1메뉴입니다</h2>
+			<h2 class="gra7">오늘 챌린지 ㄱ?</h>
+	</section>
+
+	<section class="back_black">
+		<div class="wrap">
+			<h1> 선 넘는 외국어, <br>여기 한국 맞나요?</h1>
+		</div>
+	</section>
+</body>
+
+
+
+<section class="morePad">
+	<div class="wrap flex">
+		<div> <a href="https://www.youtube.com/watch?v=Zi9Fxy3XuBE">
+			<img class="imgsize" src="news_1.png"></a> </div>
+
+	<div> <a href="https://www.youtube.com/watch?app=desktop&v=3kSafscpDLM">
+			<img class="imgsize"  src="news_2.png"></a> </div>	
+
+
+	<div> <a href="https://www.youtube.com/watch?v=5AZ0kuTDCyw">
+			<img class="imgsize"  src="news_3.png"></a>	</div>
+</div>
+</section>
+
+<section class="back_red">
+	<div class="wrap flex btwnbox">
+		<h3>과한 외국어 </h3>
+		<h4>단어에 마우스를 갖다 대어 어떤 뜻인지 확인해 보세요</h4>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">모찌</div> <div class="box">맘스스테이션</div> <div class="box">오마카세</div> <div class="box">솔드 아웃</div> <div class="box">아더 컬러</div>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">디벨롭</div> <div class="box">바이럴</div> <div class="box">바잉</div> <div class="box">테스트</div> <div class="box">옵션</div>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">베이커리</div> <div class="box">니즈</div> <div class="box">오픈런</div> <div class="box">이슈</div> <div class="box">유도리</div>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">시니어 클럽</div> <div class="box">소라색</div> <div class="box">1인 1메뉴</div> <div class="box">오브제</div> <div class="box">네셔널<br>메모리얼 파크</div>
+	</div>
+
+	<div class="wrap flex btwnbox">
+		<div class="box">컨펌</div> <div class="box">피드백</div> <div class="box">테스트</div> <div class="box">초이스</div> <div class="box">스터디 센터</div>
+	</div>
+</section>
+
+
+<section>
+	<div class="wrap btwn underPad">
+	<h3>과한 외국어,<br>뭐가 문제일까?</h3></div>
+	<div class="wrap flex">
+		<div class="flexHalf">
+				<p class="reason1"> 언어의 본질은 소통이다. 외래어 남용은 언어 소외계층을 만들어내고, 외래어로 인한 언어 소외계층 형성은 세대 간의 소통 단절을 불러일으킨다. 의사소통의 단절은 세대 간 갈등으로 이어지는 지름길이다. 성기지 한글학회 연구편찬실장은 “모든 국민이 외국어에 능숙하지 않고, 또 능숙해야 할 의무도 없다.”면서 “그런데 외국어가 지속적으로 남용되면 급기야 외국어 능력에 따라 알 권리를 침해당하는 상황이 발생할지도 모른다.”고 우려했다.</p>
+				<h5 class="reasonBox1">소통의 부재</h5></div>
+		<div>
+			<p class="reason2"> 외국어는 꽤 오래 전부터 우리 삶에 깊게 스며들어 습관처럼 사용되고 있다. 이러한 추세라면 앞으로 한글의 입지가 줄어들지도 모른다. 안태형 동아대 국어문화원 특별연구원은 "단어라는 것은 기본적으로 생성, 성장, 소멸의 단계를 거친다. 확대하면 언어도 언어들은 소멸되는 시기가 많이 늦춰진다. 사용하는 것은 계속 살아남고 사용하지 않는 것은 소멸되는 단계를 거치게 된다. 그래서 지금 추세로 두게 된다면은 많은 우리 어휘들이 외국어나 외래어에 의해서 사라질 확률이 높다."고 말했다. </p></div>
+			<h5 class="reasonBox2">언어 소멸의 위험</h5>
+	</div>
+
+</section>
+
+
+
+<section class="back_black morePad">
+	<div class="wrap">
+		<li> <a><h1>들어는 봤나, 다듬은 말</h1></a>
+		<b><p class="fontWhite center">'지나치게 어려운 말이나 비규범적인 말, 외래어 따위를 알기 쉽고 규범적인 상태로 또는 고유어를 순화한 말을 이른다'고 정의하고 있다. '순화어'라는 말 자체도 한자어여서 순화어 대신 '다듬은 말'이라고 한다.</p></b>
+</section>
+
+
+<section class="morePad good">
+	<div class="wrap">
+		<ul>
+		<a>어제 먹요일이라서<br>엽떡에 허니콤보 맛조합해서<br>폭식했더니<br>해독해야 할 것 같은데</a>
+		<b> <input type="checkbox" id="ch1"> <label for="ch1">자주 사용되는 단어로 보기</label></b></ul></div>
+
+		<script>
+			#ch1:checked~.addEvenListener('change', function () {
+			 const changedText = '어제 <span class="fontRed">치팅 데이</span>라서<br> 엽떡에 허니콤보 페어링해서<br>폭식했더니<br>디톡스해야 할 것 같은데...';
+			 this.textContent = this.checked ? changedText : this.dataset.originalText;
+    });
+
+			#ch1~.dataset.originalText = #ch1~.textContent;
+  </script>
+	</section>
+
+
+	<section class="back_red">
+		<div class="wrap flex lessPad">
+		<h3>잘 다듬은 말 </h3>
+		<h4>단어에 마우스를 갖다 대어 어떤 뜻인지 확인해 보세요</h4>
+		</div>
+		<div class="wrap btwnbox"> <h4 class="noMar">기준: 직관적으로 이해하기 쉬움, 형태적으로 짧음</h4></div>
+	<div class="wrap flex btwnbox">
+		<div class="box">댓글</div> <div class="box">비대면</div> <div class="box">신입생</div> <div class="box">전화 금융 사기</div> <div class="box">환경 사회 투명<br>경영</div>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">디벨롭</div> <div class="box">바이럴</div> <div class="box">바잉</div> <div class="box">테스트</div> <div class="box">옵션</div>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">베이커리</div> <div class="box">니즈</div> <div class="box">오픈런</div> <div class="box">이슈</div> <div class="box">유도리</div>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">시니어 클럽</div> <div class="box">소라색</div> <div class="box">1인 1메뉴</div> <div class="box">오브제</div> <div class="box">헬스</div>
+	</div>
+
+	<div class="wrap flex btwnbox">
+		<div class="box">컨펌</div> <div class="box">피드백</div> <div class="box">테스트</div> <div class="box">초이스</div> <div class="box">스터디 센터</div>
+	</div>
+</section>
+
+<section class="morePad bad">
+	<div class="wrap">
+		<ul class="opa">
+		<a>어울참 맛집 검색하려고<br>어떤 사람 누리사랑방 들어갔다가<br>영화헤살꾼당했어<br>내일 각도 조절 의자관에서 보려고 했는데<br>망했어...</a>
+		<b> <input type="checkbox" id="ch1"> <label for="ch1">자주 사용되는 단어로 보기</label></b></ul></div>
+
+		<script>
+			#ch1:checked~.addEvenListener('change', function () {
+			 const changedText = '<span class="fontRed">브런치</span>맛집 검색하려고<br> 어떤 사람 누리사랑방 들어갔다가<br>영화헤살꾼당했어<br>내일 각도 조절 의자관에서 보려고 했는데<br>망했어...';
+			 this.textContent = this.checked ? changedText : this.dataset.originalText;
+    });
+
+			#ch1~.dataset.originalText = #ch1~.textContent;
+  </script>
+
+</section>
+
+	<section class="back_red">
+		<div class="wrap flex lessPad">
+		<h3>못 다듬은 말 </h3>
+		<h4>단어에 마우스를 갖다 대어 어떤 뜻인지 확인해 보세요</h4>
+		</div>
+		<div class="wrap btwnbox"> <h4 class="noMar">기준: 입에 잘 붙지 않음 / 직관적이지 않음 / 의미 전달 안 됨 / 의미를 다 담지 못함 / 단순 나열 / 여전히 다듬지 못한 말 존재 / 해석 오류 </h4></div>
+	<div class="wrap flex btwnbox">
+		<div class="box">댓글</div> <div class="box">비대면</div> <div class="box">신입생</div> <div class="box">전화 금융 사기</div> <div class="box">환경 사회 투명<br>경영</div>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">디벨롭</div> <div class="box">바이럴</div> <div class="box">바잉</div> <div class="box">테스트</div> <div class="box">옵션</div>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">베이커리</div> <div class="box">니즈</div> <div class="box">오픈런</div> <div class="box">이슈</div> <div class="box">유도리</div>
+	</div>
+	<div class="wrap flex btwnbox">
+		<div class="box">시니어 클럽</div> <div class="box">소라색</div> <div class="box">1인 1메뉴</div> <div class="box">오브제</div> <div class="box">헬스</div>
+	</div>
+
+	<div class="wrap flex btwnbox">
+		<div class="box">컨펌</div> <div class="box">피드백</div> <div class="box">테스트</div> <div class="box">초이스</div> <div class="box">스터디 센터</div>
+	</div>
+</section>
+
+
+</section>
+	</section>
+</html>
